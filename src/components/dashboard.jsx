@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "./common/navbar";
 import Cart from "./cart";
 import CartStatus from "./cartStatus";
+import Actions from "./actions";
 
 import "./styles/dashboard.css";
 
@@ -32,6 +33,12 @@ const Dashboard = () => {
 							<div className="homepage-content-inventory-container">
 								<Cart />
 							</div>
+						</div>
+					</div>
+
+					<div className="homepage-content-second-line">
+						<div className="homepage-content-actions">
+							<Actions />
 						</div>
 					</div>
 				</div>

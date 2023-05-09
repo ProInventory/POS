@@ -1,0 +1,40 @@
+.actions {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.actions-button {
+	height: 90px;
+	width: 150px;
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.actions-checkout,
+.actions-print,
+.actions-cancel {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 17px;
+	line-height: 25px;
+	color: white;
+}
+
+.actions-checkout {
+	background-color: #4caf50;
+}
+
+.actions-print {
+	background-color: #008cba;
+}
+
+.actions-cancel {
+	background-color: #f44336;
+}

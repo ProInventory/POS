@@ -14,7 +14,6 @@
 	padding-top: 60px;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 }
 
 .homepage-content-first-line {
@@ -24,12 +23,12 @@
 
 .homepage-content-cart {
 	flex-basis: 40%;
-	height: 400px;
+	height: 100%;
 }
 
 .homepage-content-inventoty {
 	flex-basis: 60%;
-	height: 460px;
+	height: 100%;
 	overflow: auto;
 }
 
@@ -41,11 +40,23 @@
 }
 
 .homepage-content-cart-container {
-	height: 350px;
+	height: 450px;
 	overflow: auto;
 }
 
 .homepage-content-cart-status-container {
 	width: 90%;
 	padding-top: 20px;
+}
+
+.homepage-content-second-line {
+	display: flex;
+	padding-top: 20px;
+}
+
+.homepage-content-actions {
+	padding-left: 25px;
+	padding-right: 25px;
+	width: 37%;
+	padding-bottom: 20px;
 }
