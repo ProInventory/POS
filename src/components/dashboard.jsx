@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Navbar from "./common/navbar";
 import Cart from "./cart";
 import CartStatus from "./cartStatus";
 import Actions from "./actions";
+import Messagebox from "./common/messagebox";
 
 import "./styles/dashboard.css";
 
 const Dashboard = () => {
 	const user = "User 1";
+
+	const [isOpen, setIsOpen] = useState(false);
+
+	const openNotification = (e) => {
+		e.preventDefault();
+		setIsOpen(true);
+	};
+
+	const closeNotification = (e) => {
+		e.preventDefault();
+		setIsOpen(false);
+	};
 
 	return (
 		<React.Fragment>
@@ -38,11 +51,17 @@ const Dashboard = () => {
 
 					<div className="homepage-content-second-line">
 						<div className="homepage-content-actions">
-							<Actions />
+							<Actions onCancel={openNotification} />
 						</div>
 					</div>
 				</div>
 			</div>
+			{isOpen && (
+				<Messagebox
+					message="This is a notification message"
+					onCloseNotification={closeNotification}
+				/>
+			)}
 		</React.Fragment>
 	);
 };

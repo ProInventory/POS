@@ -8,7 +8,9 @@ import {
 	faReceipt,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Actions = () => {
+const Actions = (props) => {
+	const { onCancel } = props;
+
 	return (
 		<React.Fragment>
 			<div className="actions">
@@ -20,7 +22,10 @@ const Actions = () => {
 					Print Receipt
 					<FontAwesomeIcon icon={faReceipt} />
 				</button>
-				<button className="actions-button actions-cancel">
+				<button
+					onClick={onCancel}
+					className="actions-button actions-cancel"
+				>
 					Cancel
 					<FontAwesomeIcon icon={faBan} />
 				</button>
