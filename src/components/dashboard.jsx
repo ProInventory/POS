@@ -1,6 +1,8 @@
 import React from "react";
 
 import Navbar from "./common/navbar";
+import Cart from "./cart";
+import CartStatus from "./cartStatus";
 
 import "./styles/dashboard.css";
 
@@ -15,7 +17,23 @@ const Dashboard = () => {
 				</div>
 
 				<div className="homepage-content">
-					<h1>Dashboard</h1>
+					<div className="homepage-content-first-line">
+						<div className="homepage-content-cart">
+							<div className="homepage-content-cart-container">
+								<Cart />
+							</div>
+
+							<div className="homepage-content-cart-status-container">
+								<CartStatus />
+							</div>
+						</div>
+
+						<div className="homepage-content-inventoty">
+							<div className="homepage-content-inventory-container">
+								<Cart />
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</React.Fragment>

@@ -1,3 +1,7 @@
+.homepage {
+	height: 100vh;
+}
+
 .homepage-navbar {
 	position: fixed;
 	top: 0;
@@ -7,8 +11,41 @@
 }
 
 .homepage-content {
-	padding-top: 50px;
+	padding-top: 60px;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+}
+
+.homepage-content-first-line {
+	display: flex;
+	padding-top: 20px;
+}
+
+.homepage-content-cart {
+	flex-basis: 40%;
+	height: 400px;
+}
+
+.homepage-content-inventoty {
+	flex-basis: 60%;
+	height: 460px;
+	overflow: auto;
+}
+
+.homepage-content-cart-container,
+.homepage-content-inventory-container,
+.homepage-content-cart-status-container {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.homepage-content-cart-container {
+	height: 350px;
+	overflow: auto;
+}
+
+.homepage-content-cart-status-container {
+	width: 90%;
+	padding-top: 20px;
 }
