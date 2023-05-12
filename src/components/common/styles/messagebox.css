@@ -7,14 +7,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 	background-color: rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(10px);
 }
 
 .messagebox-content {
 	background-color: white;
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+	box-shadow: 10px 10px 15px rgba(70,70,70,0.3);
 	padding: 20px;
 	border-radius: 30px;
 	width: 500px;

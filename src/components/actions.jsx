@@ -14,20 +14,16 @@ const Actions = (props) => {
 	return (
 		<React.Fragment>
 			<div className="actions">
-				<button className="actions-button actions-checkout">
-					Checkout
-					<FontAwesomeIcon icon={faCartShopping} />
+				<button className="actions-button">
+					<label className="actions-text"> Checkout </label>
 				</button>
-				<button className="actions-button actions-print">
-					Print Receipt
-					<FontAwesomeIcon icon={faReceipt} />
+				<button className="actions-button">
+					<label className="actions-text"> Print Receipt </label>
 				</button>
 				<button
 					onClick={onCancel}
-					className="actions-button actions-cancel"
-				>
-					Cancel
-					<FontAwesomeIcon icon={faBan} />
+					className="cancel-button">
+					<label className="actions-text"> Cancel </label>
 				</button>
 			</div>
 		</React.Fragment>

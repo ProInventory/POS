@@ -1,40 +1,47 @@
 .actions {
+	padding-top: 12%;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
 }
 
 .actions-button {
-	height: 90px;
-	width: 150px;
-	font-size: 16px;
+	height: 70px;
+	width: 200px;
 	font-weight: bold;
 	border: none;
-	border-radius: 5px;
+	border-radius: 30px;
 	cursor: pointer;
 	margin-right: 10px;
+	box-shadow: -10px -10px 15px rgba(255,255,255,0.9),
+            10px 10px 15px rgba(70,70,70,0.2);
+
 }
 
-.actions-checkout,
-.actions-print,
-.actions-cancel {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-size: 17px;
-	line-height: 25px;
-	color: white;
+.actions-text{
+	font-family: "Rubik", sans-serif;
+	font-size: 20px;
+	color:#3b3b3b;
 }
 
-.actions-checkout {
-	background-color: #4caf50;
+.actions-button:hover {
+	border: 2px solid #858080;
 }
 
-.actions-print {
-	background-color: #008cba;
+.cancel-button{
+	height: 70px;
+	width: 200px;
+	font-weight: bold;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	margin-right: 10px;
+	box-shadow: -10px -10px 15px rgba(255,255,255,0.9),
+            10px 10px 15px rgba(70,70,70,0.2);
 }
 
-.actions-cancel {
-	background-color: #f44336;
+
+.cancel-button:hover {
+	border: 2px solid #fc7f7f;
 }
+
