@@ -19,6 +19,7 @@
 	margin-left: 10px;
 	padding-bottom: 2px;
 	color: #fff;
+	font-family: "Rubik", sans-serif;
 }
 
 .navbar-logo-image {
@@ -45,9 +46,23 @@
 	height: 40px;
 	outline: 2px solid #fff;
 	border-radius: 50%;
+	transition: transform 0.2s ease-in-out;
 }
 
+.navbar-user-image:hover {
+	transform: scale(1.2);
+  }
+
 .navbar-user-text {
-	padding-left: 20px;
+	font-size: 20px;
+	font-weight: 500;
+	margin-left: 25px;
+	padding-bottom: 5px;
 	color: #fff;
+	transition: transform 0.2s ease-in-out;
+	font-family: "Rubik", sans-serif;
 }
+
+.navbar-user-text:hover {
+	transform: scale(1.2);
+  }
