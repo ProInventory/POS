@@ -1,5 +1,5 @@
 .actions {
-	padding-top: 12%;
+	padding-top: 5%;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
@@ -20,6 +20,7 @@
 
 .actions-text{
 	font-family: "Rubik", sans-serif;
+	font-weight: 500;
 	font-size: 20px;
 	color:#3b3b3b;
 }
