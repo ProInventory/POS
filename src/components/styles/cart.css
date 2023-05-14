@@ -1,3 +1,20 @@
+
+
+*::-webkit-scrollbar {
+	width: 0.5rem;
+	height: 0.5rem;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #c7c7c7;
+	visibility: hidden;
+}
+
+*:hover::-webkit-scrollbar-thumb{
+	visibility: visible;
+}
+
 .cart-table {
 	border-collapse: collapse;
 	width: 100%;
@@ -7,8 +24,9 @@
 }
 
 .cart-table-head {
-	background-color: #efefef;
-	font-weight: bold;
+	background-color: #ffffff;
+	font-weight: bolder;
+	font-family: "Rubik", sans-serif;
 }
 
 .cart-table-head .cart-table-th {
@@ -16,12 +34,14 @@
 	top: 0;
 	background-color: #efefef;
 	font-weight: bold;
+	color: #3b3b3b;
 }
 
 .cart-table-th,
 .cart-table-td {
 	padding: 10px;
-	border: 1px solid #ddd;
+	font-family: "Rubik", sans-serif;
+	color: #3b3b3b;
 }
 
 .cart-table-th:first-child,
@@ -47,12 +67,21 @@
 	width: 20%;
 }
 
+.cart-table-tr:nth-child(even){
+	background-color: #f7f6f6;
+}
+
+.cart-table-tr:hover{
+	background-color: #ebebeb;
+}
+
+
 .cart-table-button {
 	padding: 5px 10px;
-	border: none;
-	border-radius: 4px;
-	color: #fff;
-	background-color: #4caf50;
+	border: 0.5px solid #3b3b3b ;
+	border-radius: 10px;
+	color: #3b3b3b;
+	background-color: #ffffff;
 	cursor: pointer;
 	font-size: 10px;
 }
@@ -62,5 +91,7 @@
 }
 
 .cart-table-button:hover {
-	background-color: #3e8e41;
+	border: 0.5px solid #ff0505 ;
+	color: #ff0505;
+	font-weight: bold;
 }

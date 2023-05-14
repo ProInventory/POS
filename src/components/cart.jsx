@@ -5,6 +5,8 @@ import "./styles/cart.css";
 const Cart = () => {
 	return (
 		<React.Fragment>
+			<div className="table-div">
+			<section className="table-body">
 			<table className="cart-table">
 				<thead className="cart-table-head">
 					<tr className="cart-table-tr">
@@ -162,6 +164,8 @@ const Cart = () => {
 					</tr>
 				</tbody>
 			</table>
+			</section>
+		</div>
 		</React.Fragment>
 	);
 };
